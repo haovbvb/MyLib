@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/haovbvb/MyLib.git', :tag => s.version.to_s }
 
     s.source_files = 'MyLib/**/*.{swift}'
+
+s.dependency 'XECoreService', '1.0.2'
     
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'page' => 'email201111@qq.com' }
