@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         let line = UIView(frame: CGRect(x: 50, y: 50, width: 300, height: 50))
         line.addLineBottom(UIColor.red)
         view.addSubview(line)
+        
+        let test = Test(frame: CGRect(x: 50, y: 100, width: 90, height: 80))
+        view.addSubview(test)
     }
 
 
