@@ -17,6 +17,7 @@
 		157CD307229F7F880099EFCC /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CD302229F7F880099EFCC /* UILabelExtension.swift */; };
 		157CD308229F7F880099EFCC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CD303229F7F880099EFCC /* UIViewExtension.swift */; };
 		157CD309229F7F880099EFCC /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CD304229F7F880099EFCC /* UIImageExtension.swift */; };
+		7552D3BE0A8A3574BB0D0694 /* Pods_MyLibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809C5AFCC636825A038C2BF5 /* Pods_MyLibDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		157CD302229F7F880099EFCC /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		157CD303229F7F880099EFCC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		157CD304229F7F880099EFCC /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		809C5AFCC636825A038C2BF5 /* Pods_MyLibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F27FF434CE26E93A6E28AE /* Pods-MyLibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLibDemo.release.xcconfig"; path = "Target Support Files/Pods-MyLibDemo/Pods-MyLibDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C21444C098E422BEEB35E76F /* Pods-MyLibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLibDemo.debug.xcconfig"; path = "Target Support Files/Pods-MyLibDemo/Pods-MyLibDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7552D3BE0A8A3574BB0D0694 /* Pods_MyLibDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				157CD2EC229F7F6A0099EFCC /* MyLibDemo */,
 				157CD2EB229F7F6A0099EFCC /* Products */,
+				AF3F04E0B6A3BAF2D44FDCA5 /* Pods */,
+				1968CD904EBF28EB08120736 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +95,24 @@
 			path = ../../MyLib;
 			sourceTree = "<group>";
 		};
+		1968CD904EBF28EB08120736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				809C5AFCC636825A038C2BF5 /* Pods_MyLibDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF3F04E0B6A3BAF2D44FDCA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C21444C098E422BEEB35E76F /* Pods-MyLibDemo.debug.xcconfig */,
+				B2F27FF434CE26E93A6E28AE /* Pods-MyLibDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 157CD2FC229F7F6B0099EFCC /* Build configuration list for PBXNativeTarget "MyLibDemo" */;
 			buildPhases = (
+				84ED55A8E6A17B12960DA11C /* [CP] Check Pods Manifest.lock */,
 				157CD2E6229F7F6A0099EFCC /* Sources */,
 				157CD2E7229F7F6A0099EFCC /* Frameworks */,
 				157CD2E8229F7F6A0099EFCC /* Resources */,
+				7C6730DBDFE95B16EA4178FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C6730DBDFE95B16EA4178FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyLibDemo/Pods-MyLibDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyLibDemo/Pods-MyLibDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyLibDemo/Pods-MyLibDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84ED55A8E6A17B12960DA11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyLibDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		157CD2E6229F7F6A0099EFCC /* Sources */ = {
@@ -309,6 +378,7 @@
 		};
 		157CD2FD229F7F6B0099EFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C21444C098E422BEEB35E76F /* Pods-MyLibDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -328,6 +398,7 @@
 		};
 		157CD2FE229F7F6B0099EFCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F27FF434CE26E93A6E28AE /* Pods-MyLibDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

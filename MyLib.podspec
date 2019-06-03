@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
     s.source_files = 'MyLib/**/*.{swift}'
 
-s.dependency 'XEBaseUI'
+s.dependency 'SnapKit', '4.2.0'
     
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'page' => 'email201111@qq.com' }
